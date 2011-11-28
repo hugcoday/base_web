@@ -16,41 +16,20 @@
 -- drop table supplier;
 -- drop table sequence;
 
-create table supplier (
-    suppid int not null,
-    name varchar(80) null,
-    status varchar(2) not null,
-    addr1 varchar(80) null,
-    addr2 varchar(80) null,
-    city varchar(80) null,
-    state varchar(80) null,
-    zip varchar(5) null,
-    phone varchar(80) null,
-    constraint pk_supplier primary key (suppid)
-);
 
-create table signon (
-    username varchar(25) not null,
-    password varchar(25)  not null,
-    constraint pk_signon primary key (username)
-);
 
 create table account (
-    userid varchar(80) not null,
-	dept_id integer not null,
+    user_id varchar(80) not null,
+	user_name varchar(80) not null,
+	password varchar(25)  not null,
 	company_id integer not null,
+	dept_id integer not null,
     email varchar(80) not null,
-    firstname varchar(80) not null,
-    lastname varchar(80) not null,
     status varchar(2)  null,
     addr1 varchar(80) not null,
     addr2 varchar(40) null,
-    city varchar(80) not  null,
-    state varchar(80) not null,
-    zip varchar(20) not null,
-    country varchar(20) not null,
-    phone varchar(80) not null,
-    constraint pk_account primary key (userid)
+	phone varchar(80) not null,
+    constraint pk_account primary key (user_id)
 );
 
 create table dept (

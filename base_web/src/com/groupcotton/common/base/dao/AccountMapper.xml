@@ -4,7 +4,7 @@
 
 <mapper namespace="com.groupcotton.common.base.dao.AccountMapper">
 
-  <cache />
+ 
   
   <select id="getCount" parameterType="Account" resultType="int">
     SELECT count(*)

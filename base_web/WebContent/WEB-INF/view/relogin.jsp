@@ -11,7 +11,7 @@
   </head>
   
   <body>
-    ${message}
+   
     <form action="<%=request.getContextPath()%>/welcome" method="post">
     	姓名：<input name="name"><br/>
     	密码：<input type="password" name="password"><br/>

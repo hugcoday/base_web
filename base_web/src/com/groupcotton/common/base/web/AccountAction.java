@@ -11,9 +11,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+
 import com.groupcotton.common.base.service.AccountService;
 import com.groupcotton.common.base.service.DeptService;
 import com.groupcotton.common.base.vo.Account;
+
 import com.groupcotton.common.util.DataGridModel;
 
 
@@ -21,19 +23,20 @@ import com.groupcotton.common.util.DataGridModel;
 
 @Controller
 @RequestMapping("/user")
-public class AccountAction {
+public class AccountAction  {
+
 	
 	private DeptService deptService;
 	
-	private AccountService userService;
+	private AccountService accountService;
 
 	
-	public AccountService getUserService() {
-		return userService;
+	public AccountService getaccountService() {
+		return accountService;
 	}
 
-	public void setUserService(AccountService userService) {
-		this.userService = userService;
+	public void setaccountService(AccountService accountService) {
+		this.accountService = accountService;
 	}
 
 	public DeptService getDeptService() {
@@ -54,8 +57,8 @@ public class AccountAction {
 	@ResponseBody         
 	public Map<String, Object> queryList(DataGridModel dgm,Account user) throws Exception{
 		//spring太给力了，可以自动装配两个对象  会自动的装返回的Map转换成JSON对象
-	    //return userService.getPageListByExemple(dgm, user); 
-	    return userService.getPageList(dgm, user);
+	    //return accountService.getPageListByExemple(dgm, user); 
+	    return accountService.getPageList(dgm, user);
 	}
 	
 	@RequestMapping(value="/popWindow",method=RequestMethod.GET)
@@ -69,7 +72,7 @@ public class AccountAction {
 		//spring会利用jackson自动将返回值封装成JSON对象，比struts2方便了很多
 		Map<String, String> map = new HashMap<String, String>();
 		try {
-			userService.updateAccount(user);
+			accountService.updateAccount(user);
 			map.put("mes", "操作成功");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -85,7 +88,7 @@ public class AccountAction {
 		//spring mvc 还可以将参数绑定为list类型
 		Map<String, String> map = new HashMap<String, String>();
 		try {
-			userService.deleteAccount(uid);
+			accountService.deleteAccount(uid);
 			map.put("mes", "删除成功");
 		} catch (Exception e) {
 			e.printStackTrace();

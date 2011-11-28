@@ -13,27 +13,21 @@
 			striped: true, //奇偶行颜色不同
 			collapsible:true,//可折叠
 			url:"user/queryList", //数据来源
-			sortName: 'user.id', //排序的列
+			sortName: 'username', //排序的列
 			sortOrder: 'desc', //倒序
 			remoteSort: true, //服务器端排序
-			idField:'uid', //主键字段
+			idField:'username', //主键字段
 			queryParams:{}, //查询条件
 			pagination:true, //显示分页
 			rownumbers:true, //显示行号
 			columns:[[
 				{field:'ck',checkbox:true,width:2}, //显示复选框
-				{field:'user.name',title:'名字',width:20,sortable:true,
-					formatter:function(value,row,index){return row.user.name;} //需要formatter一下才能显示正确的数据
+				{field:'username',title:'名字',width:20,sortable:true,
+					formatter:function(value,row,index){return row.username;} //需要formatter一下才能显示正确的数据
 				},
-				{field:'user.age',title:'年龄',width:20,sortable:true,
-					formatter:function(value,row,index){return row.user.age;}
-				},
-				{field:'user.birthday',title:'生日',width:30,sortable:true,
-					formatter:function(value,row,index){return row.user.birthday;}
-				},
-				{field:'user.deptId',title:'部门',width:30,sortable:true,
+				{field:'deptId',title:'部门',width:30,sortable:true,
 					formatter:function(value,row,index){
-						return row.deptName;  //该列的值是deptId，显示的是deptName
+						return row.email;  //该列的值是deptId，显示的是deptName
 					}
 				}
 			]],
