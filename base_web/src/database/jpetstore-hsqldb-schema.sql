@@ -19,8 +19,9 @@
 
 
 create table account (
-    user_id varchar(80) not null,
-	user_name varchar(80) not null,
+    account_id int not null,
+	account_code varchar(80) not null,
+	account_name varchar(80) not null,
 	password varchar(25)  not null,
 	company_id integer not null,
 	dept_id integer not null,
@@ -29,13 +30,48 @@ create table account (
     addr1 varchar(80) not null,
     addr2 varchar(40) null,
 	phone varchar(80) not null,
-    constraint pk_account primary key (user_id)
+    constraint pk_account primary key (account_id)
 );
 
+CREATE TABLE ACCOUNT_ROLE
+ (ACCOUNT_ROLE_ID           int  NOT NULL  DEFAULT -1,
+  ACCOUNT_ID            int  NOT NULL  DEFAULT -1,
+  ROLE_ID          INT  NOT NULL  DEFAULT -1
+ )
+ 
+ CREATE TABLE ROLE(
+  ROLE_ID INT NOT NULL,
+  ROLE_CODE VARCHAR(80) NOT NULL,
+  ROLE_NAME VARCHAR(200) NOT NULL
+  )
+
+CREATE TABLE ROLE_MENU(
+   ROLE_MENU_ID INT NOT NULL,
+   ROLE_ID INT NOT NULL,
+   MENU_ID INT NOT NULL
+  )
+  
+CREATE TABLE MENU(
+   MENU_ID INT NOT NULL,
+   MENU_CODE VARCHAR(80) NOT NULL,
+   MENU_NAME VARCHAR(200) NOT NULL,
+   MENU_URL VARCHAR(400) ,
+   MENU_PICTURE VARCHAR(400) , 
+   MENU_PARENT_ID INT ,
+   MENU_LEVEL INT 
+  )
+  
 create table dept (
 	dept_id integer not null,
 	dept_code varchar(80) not null,
-	dept_name varchar(200) not null
+	dept_name varchar(200) not null,
+	COMPANY_ID INT 
+)
+
+CREATE TABLE COMPANY(
+	COMPANY_ID INT NOT NULL,
+	COMPANY_CODE VARCHAR(80) NOT NULL,
+	COMPANY_NAME VARCHAR(200) NOT NULL
 )
 
 create table profile (

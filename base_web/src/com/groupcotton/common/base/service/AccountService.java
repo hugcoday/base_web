@@ -33,18 +33,13 @@ public class AccountService {
 	@Transactional
 	public void insertAccount(Account account) {
 		accountMapper.insertAccount(account);
-		accountMapper.insertProfile(account);
-		accountMapper.insertSignon(account);
+
 	}
 
 	@Transactional
 	public void updateAccount(Account account) {
 		accountMapper.updateAccount(account);
-		accountMapper.updateProfile(account);
-
-		if (account.getPassword() != null && account.getPassword().length() > 0) {
-			accountMapper.updateSignon(account);
-		}
+	 
 	}
 	
 	@Transactional
