@@ -2,162 +2,154 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
+
+
+<!-- 不使用namespace的话sql搜索定位会比较方便 -->
 <mapper namespace="com.groupcotton.common.base.dao.AccountMapper">
 
- 
+	
+	
+	
+  <select id="getAccountByUsername" parameterType="string" resultType="Account">
+    SELECT account_id ,
+        	account_code ,
+        	account_name ,
+        	password ,
+        	company_id ,
+        	dept_id ,
+        	email ,
+        	status ,
+        	addr1 ,
+        	addr2 ,
+        	phone  FROM  account    where account_code = #{value}
+  </select>
   
+  
+
+  <select id="getAccountByUsernameAndPassword" parameterType="Account" resultType="Account">
+    SELECT account_id ,
+        	account_code ,
+        	account_name ,
+        	password ,
+        	company_id ,
+        	dept_id ,
+        	email ,
+        	status ,
+        	addr1 ,
+        	addr2 ,
+        	phone  FROM  account    where account_code = #{accountcode} and password=#{password}
+  </select>
+	
   <select id="getCount" parameterType="Account" resultType="int">
-    SELECT count(*)
-    FROM ACCOUNT, PROFILE, SIGNON, BANNERDATA
-    WHERE SIGNON.USERNAME = ACCOUNT.USERID
-      AND PROFILE.USERID = ACCOUNT.USERID
-      AND PROFILE.FAVCATEGORY = BANNERDATA.FAVCATEGORY
+    SELECT count(*) FROM  account    
   </select>
   
   
   <select id="getPageList" parameterType="Account" resultType="Account">
-    SELECT
-          SIGNON.USERNAME,
-          ACCOUNT.EMAIL,
-          ACCOUNT.FIRSTNAME,
-          ACCOUNT.LASTNAME,
-          ACCOUNT.STATUS,
-          ACCOUNT.ADDR1 AS address1,
-          ACCOUNT.ADDR2 AS address2,
-          ACCOUNT.CITY,
-          ACCOUNT.STATE,
-          ACCOUNT.ZIP,
-          ACCOUNT.COUNTRY,
-          ACCOUNT.PHONE,
-          PROFILE.LANGPREF AS languagePreference,
-          PROFILE.FAVCATEGORY AS favouriteCategoryId,
-          PROFILE.MYLISTOPT AS listOption,
-          PROFILE.BANNEROPT AS bannerOption,
-          BANNERDATA.BANNERNAME,
-          signon.password
-    FROM ACCOUNT, PROFILE, SIGNON, BANNERDATA
-    WHERE SIGNON.USERNAME = ACCOUNT.USERID
-      AND PROFILE.USERID = ACCOUNT.USERID
-      AND PROFILE.FAVCATEGORY = BANNERDATA.FAVCATEGORY
+		SELECT 
+        	account_id ,
+        	account_code ,
+        	account_name ,
+        	password ,
+        	company_id ,
+        	dept_id ,
+        	email ,
+        	status ,
+        	addr1 ,
+        	addr2 ,
+        	phone 
+		FROM account
   </select>
 
-  <select id="getAccountByUsername" parameterType="string" resultType="Account">
-    SELECT
-          SIGNON.USERNAME,
-          ACCOUNT.EMAIL,
-          ACCOUNT.FIRSTNAME,
-          ACCOUNT.LASTNAME,
-          ACCOUNT.STATUS,
-          ACCOUNT.ADDR1 AS address1,
-          ACCOUNT.ADDR2 AS address2,
-          ACCOUNT.CITY,
-          ACCOUNT.STATE,
-          ACCOUNT.ZIP,
-          ACCOUNT.COUNTRY,
-          ACCOUNT.PHONE,
-          PROFILE.LANGPREF AS languagePreference,
-          PROFILE.FAVCATEGORY AS favouriteCategoryId,
-          PROFILE.MYLISTOPT AS listOption,
-          PROFILE.BANNEROPT AS bannerOption,
-          BANNERDATA.BANNERNAME,
-          signon.password
-    FROM ACCOUNT, PROFILE, SIGNON, BANNERDATA
-    WHERE ACCOUNT.USERID = #{username}
-      AND SIGNON.USERNAME = ACCOUNT.USERID
-      AND PROFILE.USERID = ACCOUNT.USERID
-      AND PROFILE.FAVCATEGORY = BANNERDATA.FAVCATEGORY
+  <select id="getAccountByID" parameterType="string" resultType="Account">
+		SELECT 
+        	account_id ,
+        	account_code ,
+        	account_name ,
+        	password ,
+        	company_id ,
+        	dept_id ,
+        	email ,
+        	status ,
+        	addr1 ,
+        	addr2 ,
+        	phone 
+		FROM account
+		where
+        account_id = #{id} 
   </select>
+	<!-- useGeneratedKeys="true" keyProperty="xxx" for sqlserver and mysql -->
+	<insert id="insertAccount" parameterType="Account" >
+    
+        INSERT INTO account (
+        	account_id ,
+        	account_code ,
+        	account_name ,
+        	password ,
+        	company_id ,
+        	dept_id ,
+        	email ,
+        	status ,
+        	addr1 ,
+        	addr2 ,
+        	phone 
+        ) VALUES (
+        	#{accountId} ,
+        	#{accountCode} ,
+        	#{accountName} ,
+        	#{password} ,
+        	#{companyId} ,
+        	#{deptId} ,
+        	#{email} ,
+        	#{status} ,
+        	#{addr1} ,
+        	#{addr2} ,
+        	#{phone} 
+        )
+    
+		<!--	
+			oracle: order="BEFORE" SELECT sequenceName.nextval AS ID FROM DUAL 
+			DB2: order="BEFORE"" values nextval for sequenceName
+		<selectKey resultType="java.lang.Long" order="BEFORE" keyProperty="userId">
+			SELECT sequenceName.nextval AS ID FROM DUAL 
+        </selectKey>
+		-->
+	</insert>
+    
+	<update id="updateAccount" parameterType="Account" >
+     
+        UPDATE account SET
+	        account_code = #{accountCode} ,
+	        account_name = #{accountName} ,
+	        password = #{password} ,
+	        company_id = #{companyId} ,
+	        dept_id = #{deptId} ,
+	        email = #{email} ,
+	        status = #{status} ,
+	        addr1 = #{addr1} ,
+	        addr2 = #{addr2} ,
+	        phone = #{phone} 
+        WHERE 
+	        account_id = #{accountId} 
+    
+	</update>
 
-  <select id="getAccountByUsernameAndPassword" parameterType="Account" resultType="Account">
-    SELECT
-      SIGNON.USERNAME,
-      ACCOUNT.EMAIL,
-      ACCOUNT.FIRSTNAME,
-      ACCOUNT.LASTNAME,
-      ACCOUNT.STATUS,
-      ACCOUNT.ADDR1 AS address1,
-      ACCOUNT.ADDR2 AS address2,
-      ACCOUNT.CITY,
-      ACCOUNT.STATE,
-      ACCOUNT.ZIP,
-      ACCOUNT.COUNTRY,
-      ACCOUNT.PHONE,
-      PROFILE.LANGPREF AS languagePreference,
-      PROFILE.FAVCATEGORY AS favouriteCategoryId,
-      PROFILE.MYLISTOPT AS listOption,
-      PROFILE.BANNEROPT AS bannerOption,
-      BANNERDATA.BANNERNAME
-    FROM ACCOUNT, PROFILE, SIGNON, BANNERDATA
-    WHERE ACCOUNT.USERID = #{username}
-      AND SIGNON.PASSWORD = #{password}
-      AND SIGNON.USERNAME = ACCOUNT.USERID
-      AND PROFILE.USERID = ACCOUNT.USERID
-      AND PROFILE.FAVCATEGORY = BANNERDATA.FAVCATEGORY
-  </select>
+    <delete id="deleteAccount" parameterType="java.util.List">
+     
+        DELETE FROM account WHERE
+        account_id  in 
+		
+		<foreach item="item" index="index" collection="list" open="(" separator="," close=")">
 
-  <update id="updateAccount" parameterType="Account">
-    UPDATE ACCOUNT SET
-      EMAIL = #{email},
-      FIRSTNAME = #{firstName},
-      LASTNAME = #{lastName},
-      STATUS = #{status},
-      ADDR1 = #{address1},
-      ADDR2 = #{address2,jdbcType=VARCHAR},
-      CITY = #{city},
-      STATE = #{state},
-      ZIP = #{zip},
-      COUNTRY = #{country},
-      PHONE = #{phone}
-    WHERE USERID = #{username}
-  </update>
+		 # {item}
 
-  <insert id="insertAccount" parameterType="Account">
-    INSERT INTO ACCOUNT
-      (EMAIL, FIRSTNAME, LASTNAME, STATUS, ADDR1, ADDR2, CITY, STATE, ZIP, COUNTRY, PHONE, USERID)
-    VALUES
-      (#{email}, #{firstName}, #{lastName}, #{status}, #{address1},  #{address2,jdbcType=VARCHAR}, #{city}, #{state}, #{zip}, #{country}, #{phone}, #{username})
-  </insert>
-
-  <!--  
-  TODO MyBatis 3 does not map booleans to integers
-  <update id="updateProfile" parameterType="Account">
-    UPDATE PROFILE SET
-      LANGPREF = #{languagePreference},
-      FAVCATEGORY = #{favouriteCategoryId},
-      MYLISTOPT = #{listOption},
-      BANNEROPT = #{bannerOption}
-    WHERE USERID = #{username}
-  </update>
-  -->
-
-  <update id="updateProfile" parameterType="Account">
-    UPDATE PROFILE SET
-      LANGPREF = #{languagePreference},
-      FAVCATEGORY = #{favouriteCategoryId}
-    WHERE USERID = #{username}
-  </update>
-
-  <!--  
-  TODO MyBatis 3 does not map booleans to integers
-  <insert id="insertProfile" parameterType="Account">
-    INSERT INTO PROFILE (LANGPREF, FAVCATEGORY, MYLISTOPT, BANNEROPT, USERID)
-    VALUES (#{languagePreference}, #{favouriteCategoryId}, #{listOption}, #{bannerOption}, #{username})
-  </insert>
-  -->
-
-  <insert id="insertProfile" parameterType="Account">
-    INSERT INTO PROFILE (LANGPREF, FAVCATEGORY, USERID)
-    VALUES (#{languagePreference}, #{favouriteCategoryId}, #{username})
-  </insert>
-
-  <update id="updateSignon" parameterType="Account">
-    UPDATE SIGNON SET PASSWORD = #{password}
-    WHERE USERNAME = #{username}
-  </update>
-
-  <insert id="insertSignon" parameterType="Account">
-    INSERT INTO SIGNON (PASSWORD,USERNAME)
-    VALUES (#{password}, #{username})
-  </insert>
-
+		</foreach>
+		
+     
+		
+    </delete>
+    
+    
+	
 </mapper>
+

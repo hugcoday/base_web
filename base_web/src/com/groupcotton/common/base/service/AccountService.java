@@ -19,13 +19,13 @@ public class AccountService {
 	@Autowired
 	private AccountMapper accountMapper;
 
-	public Account getAccount(String username) {
-		return accountMapper.getAccountByUsername(username);
+	public Account getAccount(String accountcode) {
+		return accountMapper.getAccountByUsername(accountcode);
 	}
 
-	public Account getAccount(String username, String password) {
+	public Account getAccount(String accountcode, String password) {
 		Account account = new Account();
-		account.setUsername(username);
+		account.setAccountCode(accountcode);
 		account.setPassword(password);
 		return accountMapper.getAccountByUsernameAndPassword(account);
 	}

@@ -13,7 +13,7 @@
   <body>
    
     <form action="<%=request.getContextPath()%>/welcome" method="post">
-    	姓名：<input name="name"><br/>
+    	姓名：<input name="accountCode"><br/>
     	密码：<input type="password" name="password"><br/>
     	<input type="submit" value="登陆">
     </form>

@@ -1,176 +1,147 @@
 package com.groupcotton.common.base.vo;
 
+
 import java.io.Serializable;
 
 
-
-public class Account implements Serializable {
-
-  private static final long serialVersionUID = 8751282105532159742L;
-
-  private String username;
-  private String password;
-  private String email;
-  private String firstName;
-  private String lastName;
-  private String status;
-  private String address1;
-  private String address2;
-  private String city;
-  private String state;
-  private String zip;
-  private String country;
-  private String phone;
-  private String favouriteCategoryId;
-  private String languagePreference;
-  private boolean listOption;
-  private boolean bannerOption;
-  private String bannerName;
-
-  public String getUsername() {
-    return username;
-  }
-
-  public void setUsername(String username) {
-    this.username = username;
-  }
-
-  public String getPassword() {
-    return password;
-  }
-
-  public void setPassword(String password) {
-    this.password = password;
-  }
-
-  public String getEmail() {
-    return email;
-  }
-
-  public void setEmail(String email) {
-    this.email = email;
-  }
-
-  public String getFirstName() {
-    return firstName;
-  }
+public class Account implements java.io.Serializable{
+	private static final long serialVersionUID = 5454155825314635342L;
+	
+	 
+	private java.lang.Integer accountId;
+	 
+	 
+	private java.lang.String accountCode;
+	 
+	 
+	private java.lang.String accountName;
+	 
+	 
+	private java.lang.String password;
+	 
+	 
+	private java.lang.Integer companyId;
+	 
+	 
+	private java.lang.Integer deptId;
+	 
+	 
+	private java.lang.String email;
+	 
+	 
+	private java.lang.String status;
+	 
+	 
+	private java.lang.String addr1;
+	 
+	 
+	private java.lang.String addr2;
+	 
+	 
+	private java.lang.String phone;
+	 
 
 
-  public void setFirstName(String firstName) {
-    this.firstName = firstName;
-  }
+	
+	 
+	public void setAccountId(java.lang.Integer value) {
+		this.accountId = value;
+	}
+	
+	public java.lang.Integer getAccountId() {
+		return this.accountId;
+	}
+	 
+	 
+	public void setAccountCode(java.lang.String value) {
+		this.accountCode = value;
+	}
+	
+	public java.lang.String getAccountCode() {
+		return this.accountCode;
+	}
+	 
+	 
+	public void setAccountName(java.lang.String value) {
+		this.accountName = value;
+	}
+	
+	public java.lang.String getAccountName() {
+		return this.accountName;
+	}
+	 
+	 
+	public void setPassword(java.lang.String value) {
+		this.password = value;
+	}
+	
+	public java.lang.String getPassword() {
+		return this.password;
+	}
+	 
+	 
+	public void setCompanyId(java.lang.Integer value) {
+		this.companyId = value;
+	}
+	
+	public java.lang.Integer getCompanyId() {
+		return this.companyId;
+	}
+	 
+	 
+	public void setDeptId(java.lang.Integer value) {
+		this.deptId = value;
+	}
+	
+	public java.lang.Integer getDeptId() {
+		return this.deptId;
+	}
+	 
+	 
+	public void setEmail(java.lang.String value) {
+		this.email = value;
+	}
+	
+	public java.lang.String getEmail() {
+		return this.email;
+	}
+	 
+	 
+	public void setStatus(java.lang.String value) {
+		this.status = value;
+	}
+	
+	public java.lang.String getStatus() {
+		return this.status;
+	}
+	 
+	 
+	public void setAddr1(java.lang.String value) {
+		this.addr1 = value;
+	}
+	
+	public java.lang.String getAddr1() {
+		return this.addr1;
+	}
+	 
+	 
+	public void setAddr2(java.lang.String value) {
+		this.addr2 = value;
+	}
+	
+	public java.lang.String getAddr2() {
+		return this.addr2;
+	}
+	 
+	 
+	public void setPhone(java.lang.String value) {
+		this.phone = value;
+	}
+	
+	public java.lang.String getPhone() {
+		return this.phone;
+	}
+	 
 
-  public String getLastName() {
-    return lastName;
-  }
-
-
-  public void setLastName(String lastName) {
-    this.lastName = lastName;
-  }
-
-  public String getStatus() {
-    return status;
-  }
-
-  public void setStatus(String status) {
-    this.status = status;
-  }
-
-  public String getAddress1() {
-    return address1;
-  }
-
-  public void setAddress1(String address1) {
-    this.address1 = address1;
-  }
-
-  public String getAddress2() {
-    return address2;
-  }
-
-  public void setAddress2(String address2) {
-    this.address2 = address2;
-  }
-
-  public String getCity() {
-    return city;
-  }
-
-  public void setCity(String city) {
-    this.city = city;
-  }
-
-  public String getState() {
-    return state;
-  }
-
-  public void setState(String state) {
-    this.state = state;
-  }
-
-  public String getZip() {
-    return zip;
-  }
-
-  public void setZip(String zip) {
-    this.zip = zip;
-  }
-
-  public String getCountry() {
-    return country;
-  }
-
-  public void setCountry(String country) {
-    this.country = country;
-  }
-
-  public String getPhone() {
-    return phone;
-  }
-
-  public void setPhone(String phone) {
-    this.phone = phone;
-  }
-
-  public String getFavouriteCategoryId() {
-    return favouriteCategoryId;
-  }
-
-  public void setFavouriteCategoryId(String favouriteCategoryId) {
-    this.favouriteCategoryId = favouriteCategoryId;
-  }
-
-  public String getLanguagePreference() {
-    return languagePreference;
-  }
-
-  public void setLanguagePreference(String languagePreference) {
-    this.languagePreference = languagePreference;
-  }
-
-  public boolean isListOption() {
-    return listOption;
-  }
-
-  public void setListOption(boolean listOption) {
-    this.listOption = listOption;
-  }
-
-  public boolean isBannerOption() {
-    return bannerOption;
-  }
-
-  public void setBannerOption(boolean bannerOption) {
-    this.bannerOption = bannerOption;
-  }
-
-  public String getBannerName() {
-    return bannerName;
-  }
-
-  public void setBannerName(String bannerName) {
-    this.bannerName = bannerName;
-  }
-
+	
 }

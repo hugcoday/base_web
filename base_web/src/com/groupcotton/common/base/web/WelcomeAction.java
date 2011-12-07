@@ -32,12 +32,12 @@ public class WelcomeAction {
 	}
 	
 	@RequestMapping(method=RequestMethod.POST)
-	public String helloWorld(Account user,Model model) throws Exception {
-		Account user1 = userService.getAccount(user.getUsername());
+	public String helloWorld(Account account,Model model) throws Exception {
+		Account user1 = userService.getAccount(account.getAccountCode());
 		if(user1 == null) {
 			model.addAttribute("message", "用户不存在");
 			return "relogin";
-		}else if(user.getPassword() == null || !user.getPassword().equals(user1.getPassword()) ){
+		}else if(account.getPassword() == null || !account.getPassword().equals(user1.getPassword()) ){
 			model.addAttribute("message", "密码错误");
 			return "relogin";
 		}else {

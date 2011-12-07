@@ -54,7 +54,7 @@
 					</ul>	
 					<ul>					
 						<li id="rightLi${child.id}" style="cursor: pointer;" 
-							onclick="setmain('用户管理','user/list')" >用户管理</li>
+							onclick="setmain('用户管理','role/list')" >角色管理</li>
 					</ul>	
 					<ul>					
 						<li id="rightLi${child.id}" style="cursor: pointer;" 

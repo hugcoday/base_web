@@ -7,7 +7,7 @@ import com.groupcotton.common.base.vo.Account;
 
 public interface AccountMapper {
 
-  Account getAccountByUsername(String username);
+  Account getAccountByUsername(String accountcode);
 
   Account getAccountByUsernameAndPassword(Account account);
 
