@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<!-- 不使用namespace的话sql搜索定位会比较方便 -->
+<mapper namespace="com.groupcotton.common.role.dao.RoleMapper">
+
+	
+	
+  <select id="getCount" parameterType="Role" resultType="int">
+    SELECT count(*) FROM  role    
+  </select>
+  
+  
+  <select id="getPageList" parameterType="Role" resultType="Role">
+		SELECT 
+        	ROLE_ID ,
+        	ROLE_CODE ,
+        	ROLE_NAME 
+		FROM role
+  </select>
+
+  <select id="getRoleByID" parameterType="string" resultType="Role">
+		SELECT 
+        	ROLE_ID ,
+        	ROLE_CODE ,
+        	ROLE_NAME 
+		FROM role
+		where
+  </select>
+	<!-- useGeneratedKeys="true" keyProperty="xxx" for sqlserver and mysql -->
+	<insert id="insertRole" parameterType="Role" >
+    
+        INSERT INTO role (
+        	ROLE_ID ,
+        	ROLE_CODE ,
+        	ROLE_NAME 
+        ) VALUES (
+        	#{roleId} ,
+        	#{roleCode} ,
+        	#{roleName} 
+        )
+    
+		<!--	
+			oracle: order="BEFORE" SELECT sequenceName.nextval AS ID FROM DUAL 
+			DB2: order="BEFORE"" values nextval for sequenceName
+		<selectKey resultType="java.lang.Long" order="BEFORE" keyProperty="userId">
+			SELECT sequenceName.nextval AS ID FROM DUAL 
+        </selectKey>
+		-->
+	</insert>
+    
+	<update id="updateRole" parameterType="Role" >
+     
+        UPDATE role SET
+	        ROLE_ID = #{roleId} ,
+	        ROLE_CODE = #{roleCode} ,
+	        ROLE_NAME = #{roleName} 
+        WHERE 
+    
+	</update>
+
+    <delete id="deleteRole" parameterType="java.util.List">
+     
+        DELETE FROM role WHERE
+     
+		
+    </delete>
+    
+    
+	
+</mapper>
+
