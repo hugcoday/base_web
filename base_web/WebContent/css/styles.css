@@ -1,0 +1,885 @@
+html {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+body {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+div {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+span {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+applet {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+object {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+iframe {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h1 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h2 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h3 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h4 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h5 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h6 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+p {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+blockquote {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+pre {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+a {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+abbr {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+acronym {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+address {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+big {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+cite {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+code {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+del {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+dfn {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+em {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+font {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+img {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+ins {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+kbd {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+q {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+s {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+samp {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+small {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+strike {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+strong {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+sub {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+sup {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+tt {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+var {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+dl {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+dt {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+dd {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+ol {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+ul {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+li {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+fieldset {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+form {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+label {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+legend {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+table {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+caption {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+tbody {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+tfoot {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+thead {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+tr {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+th {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+td {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+:focus {
+	outline: 0px;
+}
+body {
+	line-height: 1;
+}
+ol {
+	list-style: none;
+}
+ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate; border-spacing: 0;
+}
+caption {
+	text-align: left; font-weight: normal;
+}
+th {
+	text-align: left; font-weight: normal;
+}
+td {
+	text-align: left; font-weight: normal;
+}
+blockquote::before {
+	content: "";
+}
+blockquote::after {
+	content: "";
+}
+q::before {
+	content: "";
+}
+q::after {
+	content: "";
+}
+blockquote {
+	quotes: "" "";
+}
+q {
+	quotes: "" "";
+}
+html {
+	background: url("../img/bg.jpg") repeat-x 50% 0px rgb(99, 186, 216); text-align: center;
+}
+body {
+	font: 12px/normal "Lucida Grande", lucida, helvetica, arial, sans-serif; margin: 0px auto; padding: 0px; width: 840px; text-align: center; color: rgb(51, 51, 51); font-size-adjust: none; font-stretch: normal;
+}
+#wrappertop {
+	padding: 0px 20px; width: 800px; height: 20px; margin-top: 20px;
+}
+#wrapperbottom {
+	padding: 0px 20px; width: 800px; height: 20px; margin-bottom: 20px;
+}
+#wrapper {
+	padding: 0px 20px; width: 800px; position: relative;
+}
+#content {
+	width: 800px; text-align: left; background-color: rgb(255, 255, 255);
+}
+#ajaxlink {
+	width: 230px; float: right;
+}
+.greenlink {
+	background: rgb(216, 242, 201); padding: 4px; color: rgb(48, 148, 11); line-height: 14px; font-style: normal; font-weight: bold; text-decoration: none; border-bottom-color: rgb(48, 148, 11); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.greenlink_no_left_padding {
+	background: rgb(216, 242, 201); color: rgb(48, 148, 11); line-height: 14px; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; font-style: normal; font-weight: bold; text-decoration: none; border-bottom-color: rgb(48, 148, 11); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.greenlink img {
+	margin: 4px 8px 0px 0px; vertical-align: text-bottom;
+}
+.dash-link {
+	background: rgb(216, 242, 201); padding: 4px; bottom: 200px; color: rgb(48, 148, 11); line-height: 14px; font-style: normal; font-weight: bold; text-decoration: none; border-bottom-color: rgb(48, 148, 11); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.dash-link img {
+	background: rgb(216, 242, 201); margin: 4px 0px 0px; color: rgb(48, 148, 11); text-decoration: none; vertical-align: text-bottom;
+}
+#header {
+	background: rgb(197, 230, 234); padding: 25px 0px 5px 20px; width: 780px; border-bottom-color: rgb(178, 204, 208); border-bottom-width: 1px; border-bottom-style: solid;
+}
+h1 {
+	width: 220px; margin-top: 15px; display: inline;
+}
+#usercontainer {
+	width: 560px; text-align: right; float: right; _margin-top: -20px;
+}
+.boldtext {
+	font-weight: bold;
+}
+#user-options {
+	right: 0px; margin-top: 5px; float: right;
+}
+body.staff ul#user-options {
+	margin-right: 20px;
+}
+#user-options a {
+	color: rgb(51, 51, 51);
+}
+#user-options a:hover {
+	color: rgb(16, 75, 103);
+}
+#user-options li {
+	margin-left: 8px; display: inline;
+}
+.support-link {
+	background: rgb(159, 210, 216); padding: 5px; font-weight: bold; text-decoration: none; margin-left: 5px; display: block; _margin-top: -5px; _padding: 10px 5px 5px 5px;
+}
+.support-link:hover {
+	background: rgb(146, 202, 209);
+}
+.dashboard-box {
+	overflow: hidden; float: left;
+}
+ul#clientmenu {
+	margin: 0px; padding: 0px; top: 0px; width: 800px; height: 90px; display: inline-block; list-style-type: none; position: relative; _height: 1%;
+}
+ul#clientmenu::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: ".";
+}
+ul#clientmenu li a {
+	background: url("../img/navbg.png") repeat-x rgb(194, 194, 194); font: bold 20px/normal helvetica, arial, sans-serif; margin: 0px; padding: 20px; width: 159px; height: 50px !important; color: rgb(0, 0, 0); overflow: hidden; text-decoration: none; border-left-color: rgb(255, 255, 255); border-left-width: 1px; border-left-style: solid; float: left; list-style-type: none; font-size-adjust: none; font-stretch: normal;
+}
+#clientmenu li#myaccount a {
+	border: 0px currentColor; padding-left: 21px;
+}
+ul#clientmenu span {
+	font: 11px/normal "Lucida Grande", lucida, helvetica, arial, sans-serif; color: rgb(51, 51, 51); margin-top: 4px; display: block; font-size-adjust: none; font-stretch: normal;
+}
+#clientmenu li a:hover {
+	background: url("../img/navbghover.png") repeat-x rgb(194, 194, 194);
+}
+li {
+	float: left;
+}
+body#myaccountpage li#myaccount a {
+	background: rgb(255, 255, 255);
+}
+body#myprojectspage li#myprojects a {
+	background: rgb(255, 255, 255);
+}
+body#billingpage li#billing a {
+	background: rgb(255, 255, 255);
+}
+body#messagecenterpage li#messagecenter a {
+	background: rgb(255, 255, 255);
+}
+ul#staffmenu {
+	background: url("../img/staffnavbg.png") repeat-x rgb(194, 194, 194); margin: 0px; padding: 0px 0px 0px 10px; top: 0px; width: 790px; height: 40px; display: inline-block; list-style-type: none; position: relative; _height: 1%;
+}
+ul#staffmenu::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: ".";
+}
+ul#staffmenu li a {
+	font: bold 14px/normal helvetica, arial, sans-serif; margin: 0px; padding: 12px 10px; height: 16px !important; color: rgb(0, 0, 0); overflow: hidden; text-decoration: none; border-right-color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; float: left; list-style-type: none; font-size-adjust: none; font-stretch: normal;
+}
+ul#staffmenu span {
+	font: 11px/normal "Lucida Grande", lucida, helvetica, arial, sans-serif; color: rgb(51, 51, 51); margin-top: 4px; display: block; font-size-adjust: none; font-stretch: normal;
+}
+#staffmenu li a:hover {
+	background: url("../img/staffnavbghover.png") repeat-x rgb(194, 194, 194);
+}
+li {
+	float: left;
+}
+body#clientfunctionspage li#clientfunctions a {
+	background: rgb(255, 255, 255);
+}
+body#projectfunctionspage li#projectfunctions a {
+	background: rgb(255, 255, 255);
+}
+body#billingtoolspage li#billingtools a {
+	background: rgb(255, 255, 255);
+}
+body#supportpage li#support a {
+	background: rgb(255, 255, 255);
+}
+body#administrationpage li#administration a {
+	background: rgb(255, 255, 255);
+}
+body#myaccountpage li#myaccount a {
+	background: rgb(255, 255, 255);
+}
+#darkbanner {
+	background: rgb(66, 66, 66); margin: 20px 0px 0px -18px; padding: 8px 10px 10px 40px; position: relative;
+}
+#darkbanner span {
+	color: rgb(255, 255, 255); padding-left: 35px; display: block;
+}
+#darkbannerwrap {
+	background: url("../img/aiwrap.png"); margin: 0px 0px 20px -18px; width: 18px; height: 10px; position: relative;
+}
+#lightbanner {
+	background: rgb(182, 182, 182); margin: 20px 0px 0px -18px; padding: 8px 10px 10px 40px; position: relative;
+}
+#lightbanner span {
+	color: rgb(255, 255, 255); padding-left: 35px; display: block;
+}
+#lightbannerwrap {
+	background: url("../img/ciwrap.png"); margin: 0px 0px 20px -18px; width: 18px; height: 10px; position: relative;
+}
+.banner450 {
+	width: 450px;
+}
+.banner285 {
+	width: 285px;
+}
+.banner320 {
+	width: 320px;
+}
+.banner350 {
+	width: 350px;
+}
+.banner380 {
+	width: 380px;
+}
+.banner410 {
+	width: 410px;
+}
+th {
+	padding: 8px 10px; font-weight: bold;
+}
+th.number {
+	text-align: right; padding-right: 13px;
+}
+td {
+	border-bottom-color: rgb(255, 255, 255); border-bottom-width: 10px; border-bottom-style: solid;
+}
+td {
+	padding: 8px 10px;
+}
+td.number {
+	width: 30px; text-align: right; font-weight: bold;
+}
+td.number a {
+	color: rgb(48, 148, 11); font-weight: bold; text-decoration: none;
+}
+td.number a:hover {
+	color: rgb(28, 98, 3);
+}
+td.number1 {
+	width: 30px; height: 10px; text-align: right; font-weight: bold; max-height: 10px;
+}
+td.projectback span a {
+	font: 10px/normal "Lucida Grande"; color: rgb(153, 153, 153); padding-left: 10px; font-size-adjust: none; font-stretch: normal;
+}
+td.projectback span a:hover {
+	color: rgb(102, 102, 102);
+}
+td.td45 {
+	background: url("../img/tabledivider.png") no-repeat; width: 25px;
+}
+td.td65 {
+	background: url("../img/tabledivider.png") no-repeat; width: 45px;
+}
+td.td80 {
+	background: url("../img/tabledivider.png") no-repeat; width: 60px;
+}
+td.td90 {
+	background: url("../img/tabledivider.png") no-repeat; width: 70px;
+}
+td.td100 {
+	background: url("../img/tabledivider.png") no-repeat; width: 80px;
+}
+td.td100b {
+	width: 80px;
+}
+td.td120 {
+	background: url("../img/tabledivider.png") no-repeat; width: 100px;
+}
+td.td150 {
+	background: url("../img/tabledivider.png") no-repeat; width: 130px;
+}
+td.td180 {
+	background: url("../img/tabledivider.png") no-repeat; width: 160px;
+}
+td.td200 {
+	background: url("../img/tabledivider.png") no-repeat; width: 180px;
+}
+td.td220 {
+	background: url("../img/tabledivider.png") no-repeat; width: 200px;
+}
+td.td220b {
+	width: 200px;
+}
+td.td250 {
+	background: url("../img/tabledivider.png") no-repeat; width: 230px;
+}
+td.td260 {
+	background: url("../img/tabledivider.png") no-repeat; width: 240px;
+}
+td.td250b {
+	width: 230px;
+}
+td.td290b {
+	width: 270px;
+}
+td.td290b span a {
+	font: 10px/normal "Lucida Grande"; color: rgb(153, 153, 153); padding-left: 10px; font-size-adjust: none; font-stretch: normal;
+}
+td.td290b span a:hover {
+	color: rgb(102, 102, 102);
+}
+td.td300 {
+	background: url("../img/tabledivider.png") no-repeat; width: 280px;
+}
+td.td300b {
+	width: 280px;
+}
+td.td300b span a {
+	font: 10px/normal "Lucida Grande"; color: rgb(153, 153, 153); padding-left: 10px; font-size-adjust: none; font-stretch: normal;
+}
+td.td300b span a:hover {
+	color: rgb(102, 102, 102);
+}
+td.td325 {
+	background: url("../img/tabledivider.png") no-repeat; width: 305px;
+}
+td.td325 span a {
+	font: 10px/normal "Lucida Grande"; color: rgb(153, 153, 153); padding-left: 10px; font-size-adjust: none; font-stretch: normal;
+}
+td.td325 span a:hover {
+	color: rgb(102, 102, 102);
+}
+td.td325b {
+	width: 305px;
+}
+td.td335 {
+	width: 315px;
+}
+td.td335 span a {
+	font: 10px/normal "Lucida Grande"; color: rgb(153, 153, 153); padding-left: 10px; font-size-adjust: none; font-stretch: normal;
+}
+td.td335 span a:hover {
+	color: rgb(102, 102, 102);
+}
+td.td340 {
+	background: url("../img/tabledivider.png") no-repeat; width: 320px;
+}
+td.td340 span a {
+	font: 10px/normal "Lucida Grande"; color: rgb(153, 153, 153); padding-left: 10px; font-size-adjust: none; font-stretch: normal;
+}
+td.td340 span a:hover {
+	color: rgb(102, 102, 102);
+}
+td.td340b {
+	width: 320px;
+}
+td.td340b span a {
+	font: 10px/normal "Lucida Grande"; color: rgb(153, 153, 153); padding-left: 10px; font-size-adjust: none; font-stretch: normal;
+}
+td.td340b span a:hover {
+	color: rgb(102, 102, 102);
+}
+td.td350 {
+	width: 330px; font-weight: bold;
+}
+td.td350 span a {
+	font: 10px/normal "Lucida Grande"; color: rgb(153, 153, 153); padding-left: 10px; font-size-adjust: none; font-stretch: normal;
+}
+td.td350 span a:hover {
+	color: rgb(102, 102, 102);
+}
+td.td370b {
+	width: 350px;
+}
+td.td370b span a {
+	font: 10px/normal "Lucida Grande"; color: rgb(153, 153, 153); padding-left: 10px; font-size-adjust: none; font-stretch: normal;
+}
+td.td370b span a:hover {
+	color: rgb(102, 102, 102);
+}
+td.td400 {
+	background: url("../img/tabledivider.png") no-repeat; width: 380px;
+}
+td.td400 span a {
+	font: 10px/normal "Lucida Grande"; color: rgb(153, 153, 153); padding-left: 10px; font-size-adjust: none; font-stretch: normal;
+}
+td.td400 span a:hover {
+	color: rgb(102, 102, 102);
+}
+td.td500 {
+	background: url("../img/tabledivider.png") no-repeat; width: 480px;
+}
+td.paynow {
+	background: rgb(216, 242, 201); width: 80px; text-align: center;
+}
+td.paynow a {
+	color: rgb(48, 148, 11); font-weight: bold; text-decoration: none;
+}
+td.paynow a:hover {
+	color: rgb(28, 98, 3);
+}
+td.beenpaid {
+	background: rgb(235, 248, 228); width: 80px; text-align: center;
+}
+td.beenpaid a {
+	color: rgb(141, 198, 119); font-weight: bold; text-decoration: none;
+}
+td.beenpaid a:hover {
+	color: rgb(48, 148, 11);
+}
+td.wfaction {
+	background: rgb(216, 242, 201); width: 120px; text-align: center;
+}
+td.wfaction a {
+	color: rgb(48, 148, 11); font-weight: bold; text-decoration: none;
+}
+td.wfaction a:hover {
+	color: rgb(28, 98, 3);
+}
+td.tddarkred {
+	background-color: rgb(201, 55, 55);
+}
+td.tdmidred {
+	background-color: rgb(221, 130, 130);
+}
+td.tdlightred {
+	background-color: rgb(248, 230, 230);
+}
+td.tdlightgreen {
+	background-color: rgb(235, 248, 228);
+}
+td.tdmidgreen {
+	background-color: rgb(216, 242, 201);
+}
+td.tdmidorange {
+	background-color: rgb(255, 193, 76);
+}
+td.tdmidblue {
+	background-color: rgb(189, 222, 247);
+}
+td.tdmidyellow {
+	background-color: rgb(247, 246, 180);
+}
+td.tdgrey {
+	height: 10px; border-collapse: separate; max-height: 10px; background-image: url("../img/grey-table-fill.png"); background-repeat: repeat-x; background-color: white;
+}
+td.tdlightgrey {
+	background-color: rgb(182, 182, 182);
+}
+.redtext {
+	color: rgb(128, 10, 19); font-weight: bold;
+}
+.greentext {
+	color: rgb(48, 148, 11); font-weight: bold;
+}
+.bluetext {
+	color: rgb(41, 55, 148); font-weight: bold;
+}
+.orangetext {
+	color: rgb(212, 106, 0); font-weight: bold;
+}
+.yellowtext {
+	color: yellow; font-weight: bold;
+}
+.whitetext {
+	color: white; font-weight: bold;
+}
+td.actions {
+	background: rgb(219, 239, 242); width: 80px; border-left-color: rgb(255, 255, 255); border-left-width: 10px; border-left-style: solid;
+}
+td.actions img {
+	margin-right: 10px;
+}
+td.actionslong {
+	background: rgb(219, 239, 242); width: 100px; border-left-color: rgb(255, 255, 255); border-left-width: 10px; border-left-style: solid;
+}
+td.actionslong img {
+	margin-right: 10px;
+}
+#systemannouncement p {
+	background: rgb(234, 197, 197); padding: 10px 10px 2px; border: 2px solid rgb(188, 111, 107); margin-right: 15px; margin-bottom: 10px; margin-left: 15px; display: block;
+}
+#systemannouncement td {
+	padding: 0px 0px 2px 10px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 8px; border-bottom-style: solid;
+}
+#readreplymsg td {
+	padding: 0px 0px 10px 15px; margin-left: 15px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 0px; border-bottom-style: solid;
+}
+td.support-open {
+	background: rgb(216, 242, 201); width: 80px; text-align: center; color: rgb(48, 148, 11); font-weight: bold;
+}
+td.support-open a {
+	color: rgb(48, 148, 11); font-weight: bold; text-decoration: none;
+}
+td.support-open a:hover {
+	color: rgb(28, 98, 3);
+}
+td.support-closed {
+	background: rgb(221, 130, 130); width: 80px; text-align: center; color: rgb(128, 10, 19); font-weight: bold;
+}
+td.support-closed a {
+	color: rgb(128, 10, 19); font-weight: bold; text-decoration: none;
+}
+td.support-closed a:hover {
+	color: rgb(88, 6, 12);
+}
+#supportreply p.staff {
+	padding: 10px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px; border-top-color: rgb(48, 148, 11); border-bottom-color: rgb(48, 148, 11); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; display: block; background-color: rgb(216, 242, 201);
+}
+#supportreply p.client {
+	background: rgb(234, 246, 247); padding: 10px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px; border-top-color: rgb(172, 219, 225); border-bottom-color: rgb(172, 219, 225); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; display: block;
+}
+td.support-staff-open {
+	background: rgb(216, 242, 201); font-weight: bold;
+}
+td.support-staff-closed {
+	background: rgb(221, 130, 130); font-weight: bold;
+}
+td.support-actions {
+	background: rgb(219, 239, 242); width: 55px; border-left-color: rgb(255, 255, 255); border-left-width: 10px; border-left-style: solid;
+}
+td.support-actions img {
+	margin-right: 10px;
+}
+h2 {
+	font: bold 24px/normal helvetica, arial, sans-serif; color: rgb(255, 255, 255); margin-left: 10px; display: inline; font-size-adjust: none; font-stretch: normal;
+}
+fieldset {
+	margin: 20px; padding: 20px; border-top-color: rgb(172, 219, 225); border-bottom-color: rgb(172, 219, 225); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; display: block; background-color: rgb(234, 246, 247);
+}
+legend {
+	font: bold 16px/normal helvetica, arial, sans-serif; padding: 5px; font-size-adjust: none; font-stretch: normal;
+}
+label {
+	width: 150px; text-align: right; padding-top: 7px; font-weight: bold; margin-right: 10px; float: left;
+}
+input {
+	font: 16px/normal "Lucida Grande", arial, sans-serif; padding: 3px; width: 300px; height: 20px; margin-bottom: 15px; font-size-adjust: none; font-stretch: normal;
+}
+.input_file {
+	font: 16px/normal "Lucida Grande", arial, sans-serif; padding: 3px; height: 25px; margin-bottom: 15px; font-size-adjust: none; font-stretch: normal;
+}
+select {
+	font: 16px/normal "Lucida Grande", arial, sans-serif; padding: 3px; width: 310px; height: 30px; margin-bottom: 15px; font-size-adjust: none; font-stretch: normal;
+}
+textarea {
+	font: 16px/normal "Lucida Grande", arial, sans-serif; padding: 3px; width: 400px; height: 140px; margin-bottom: 15px; font-size-adjust: none; font-stretch: normal;
+}
+.wysiwyg table {
+	margin-bottom: 15px;
+}
+.wysiwyg td {
+	padding: 0px; margin-bottom: 15px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 0px; border-bottom-style: solid;
+}
+.form button {
+	margin: 0px 7px 0px 160px; padding: 5px 10px 6px 7px; border: 1px solid rgb(115, 179, 90); color: rgb(232, 247, 223); line-height: 130%; font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif; font-size: 100%; font-weight: bold; text-decoration: none; float: left; display: block; cursor: pointer; background-color: rgb(146, 201, 124); _margin-left: 82px;
+}
+.form button {
+	padding: 4px 10px 3px 7px; width: auto; overflow: visible;
+}
+.form button[type] {
+	padding: 5px 10px 5px 7px; line-height: 17px;
+}
+*:first-child + html button[type] {
+	padding: 4px 10px 3px 7px;
+}
+.form button img {
+	margin: 0px 6px -3px 0px !important; padding: 0px; border: currentColor; width: 16px; height: 16px; text-decoration: none;
+}
+.buttons a img {
+	margin: 0px 6px -3px 0px !important; padding: 0px; border: currentColor; width: 16px; height: 16px; text-decoration: none;
+}
+button:hover {
+	border: 1px solid rgb(146, 201, 124); color: rgb(49, 148, 12); background-color: rgb(232, 247, 223);
+}
+.buttons a:active {
+	border: 1px solid rgb(146, 201, 124); color: rgb(49, 148, 12); background-color: rgb(232, 247, 223);
+}
+#footer {
+	padding: 20px; width: 760px; color: rgb(159, 183, 194); font-weight: bold; margin-top: 20px; background-color: rgb(16, 75, 103);
+}
+#footer a {
+	color: rgb(159, 183, 194); font-weight: normal;
+}
+body#login {
+	width: 410px;
+}
+body#login #wrappertop {
+	width: 370px;
+}
+body#login #wrapperbottom {
+	width: 370px;
+}
+body#login #wrapperbottom_branding {
+	padding: 0px 20px; width: 370px;
+}
+body#login #wrapperbottom_branding_text {
+	font: 11px/normal "Lucida Grande", arial, sans-serif; width: 370px; color: rgb(192, 192, 192); padding-top: 3px; padding-bottom: 10px; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255);
+}
+body#login #wrapperbottom_branding_text a {
+	color: rgb(192, 192, 192);
+}
+body#login #wrapper {
+	padding: 0px 20px; width: 370px;
+}
+body#login #content {
+	width: 370px;
+}
+body#login #header {
+	width: 350px;
+}
+body#login fieldset {
+	margin: -30px 0px 0px; border: 0px currentColor; width: 330px; padding-top: 20px; display: block; background-color: rgb(255, 255, 255);
+}
+body#login fieldset p {
+	color: rgb(51, 51, 51);
+}
+body#login fieldset p.error {
+	background: rgb(234, 197, 197); padding: 10px; border: 2px solid rgb(188, 111, 107); color: rgb(123, 12, 0); font-weight: bold; margin-bottom: 20px; display: block;
+}
+body#login fieldset p.error img {
+	margin-right: 5px;
+}
+body#login label {
+	width: 70px; text-align: right; padding-top: 7px; font-weight: bold; margin-right: 10px; float: left;
+}
+body#login input {
+	font: 16px/normal "Lucida Grande", arial, sans-serif; padding: 3px; width: 238px; height: 20px; margin-bottom: 15px; font-size-adjust: none; font-stretch: normal; _width: 237px;
+}
+body#login .form button {
+	margin: 0px 3px 0px 80px; float: left; display: block; _margin-left: 42px;
+}
+#forgottenpassword {
+	margin-top: 7px;
+}
+#forgottenpassword a {
+	color: rgb(51, 51, 51);
+}
+#forgottenpassword a:hover {
+	color: rgb(16, 75, 103);
+}
+#forgottenpassword li {
+	margin-left: 10px; display: inline;
+}
+#alert p {
+	background: rgb(234, 197, 197); padding: 10px; border: 2px solid rgb(188, 111, 107); color: rgb(123, 12, 0); font-weight: bold; margin-bottom: 20px; display: block;
+}
+#alert p img {
+	margin-right: 5px;
+}
+#success p {
+	background: rgb(216, 242, 201); padding: 10px; border: 2px solid rgb(48, 148, 11); color: rgb(48, 148, 11); font-weight: bold; margin-bottom: 20px; display: block;
+}
+#success p img {
+	margin-right: 5px;
+}
+#install td {
+	border-bottom-color: rgb(255, 255, 255); border-bottom-width: 0px; border-bottom-style: solid;
+}
+#install button {
+	margin: 0px 7px 0px 160px; padding: 5px 10px 6px 7px; border: 1px solid rgb(115, 179, 90); color: rgb(232, 247, 223); line-height: 130%; font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif; font-size: 100%; font-weight: bold; text-decoration: none; float: right; display: block; cursor: pointer; background-color: rgb(146, 201, 124); _margin-left: 82px;
+}
+#install button {
+	padding: 4px 10px 3px 7px; width: auto; overflow: visible;
+}
+#install button[type] {
+	padding: 5px 10px 5px 7px; line-height: 17px;
+}
+*:first-child + html button[type] {
+	padding: 4px 10px 3px 7px;
+}
+#install button img {
+	margin: 0px 6px -3px 0px !important; padding: 0px; border: currentColor; width: 16px; height: 16px; text-decoration: none;
+}
+.buttons a img {
+	margin: 0px 6px -3px 0px !important; padding: 0px; border: currentColor; width: 16px; height: 16px; text-decoration: none;
+}
+button:hover {
+	border: 1px solid rgb(146, 201, 124); color: rgb(49, 148, 12); background-color: rgb(232, 247, 223);
+}
+.buttons a:active {
+	border: 1px solid rgb(146, 201, 124); color: rgb(49, 148, 12); background-color: rgb(232, 247, 223);
+}
+#vertgraph {
+	background: url("../img/g_backbar.gif") no-repeat; width: 378px; height: 207px; position: relative;
+}
+#vertgraph ul {
+	margin: 0px; padding: 0px; width: 378px; height: 207px;
+}
+#vertgraph ul li {
+	background: url("../img/g_colorbar3.jpg") no-repeat !important; margin: 0px !important; padding: 0px !important; width: 28px; height: 160px; text-align: center; bottom: 34px; color: white; line-height: 2.5em; font-weight: bold; position: absolute;
+}
+#vertgraph li.total {
+	background-position: 0px bottom !important; left: 24px;
+}
+#vertgraph li.notstarted {
+	background-position: -28px bottom !important; left: 101px;
+}
+#vertgraph li.inprogress {
+	background-position: -56px bottom !important; left: 176px;
+}
+#vertgraph li.inreview {
+	background-position: -84px bottom !important; left: 251px;
+}
+#vertgraph li.completed {
+	background-position: -112px bottom !important; left: 327px;
+}
+#dropmenudiv {
+	border-width: 0px 1px 1px; border-style: solid; border-color: white; font: 12px/15px "Arial"; text-align: left; color: white; padding-top: 5px; padding-bottom: 5px; position: absolute; z-index: 100; font-size-adjust: none; font-stretch: normal;
+}
+#dropmenudiv .navcat {
+	margin-left: 5px;
+}
+#dropmenudiv a {
+	font: 11px/15px "Lucida Sans"; padding: 2px 0px; width: 100%; color: rgb(80, 79, 79); text-indent: 10px; text-decoration: none; border-bottom-width: 0px; display: block; font-size-adjust: none; font-stretch: normal;
+}
+#dropmenudiv a:hover {
+	color: white; background-color: rgb(94, 93, 93);
+}
