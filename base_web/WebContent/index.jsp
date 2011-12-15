@@ -18,7 +18,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div id="wrapper">
 					<div id="content">
 						<div id="header">
-							<h1><a href=""><img src="img/logo1.png" alt="Groupcotton"></a></h1>
+							<h1><a href=""><img src="img/logo.png" alt="Groupcotton"></a></h1>
 						</div>
 						<div id="darkbanner" class="banner320">
 							<h2>登录</h2>
