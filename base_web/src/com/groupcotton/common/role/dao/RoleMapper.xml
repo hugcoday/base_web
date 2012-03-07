@@ -10,7 +10,7 @@
 	
 	
   <select id="getCount" parameterType="Role" resultType="int">
-    SELECT count(*) FROM  role    
+    SELECT count(*) FROM  sys_role    
   </select>
   
   
@@ -19,7 +19,7 @@
         	ROLE_ID ,
         	ROLE_CODE ,
         	ROLE_NAME 
-		FROM role
+		FROM sys_role
   </select>
 
   <select id="getRoleByID" parameterType="string" resultType="Role">
@@ -27,13 +27,13 @@
         	ROLE_ID ,
         	ROLE_CODE ,
         	ROLE_NAME 
-		FROM role
+		FROM sys_role
 		where
   </select>
 	<!-- useGeneratedKeys="true" keyProperty="xxx" for sqlserver and mysql -->
 	<insert id="insertRole" parameterType="Role" >
     
-        INSERT INTO role (
+        INSERT INTO sys_role (
         	ROLE_ID ,
         	ROLE_CODE ,
         	ROLE_NAME 
@@ -54,7 +54,7 @@
     
 	<update id="updateRole" parameterType="Role" >
      
-        UPDATE role SET
+        UPDATE sys_role SET
 	        ROLE_ID = #{roleId} ,
 	        ROLE_CODE = #{roleCode} ,
 	        ROLE_NAME = #{roleName} 

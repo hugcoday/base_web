@@ -18,7 +18,7 @@
 
 
 
-create table account (
+create table sys_account (
     account_id int not null,
 	account_code varchar(80) not null,
 	account_name varchar(80) not null,
@@ -33,28 +33,28 @@ create table account (
     constraint pk_account primary key (account_id)
 );
 
-CREATE TABLE ACCOUNT_ROLE
+CREATE TABLE sys_ACCOUNT_ROLE
  (ACCOUNT_ROLE_ID           int  NOT NULL  DEFAULT -1,
   ACCOUNT_ID            int  NOT NULL  DEFAULT -1,
   ROLE_ID          INT  NOT NULL  DEFAULT -1,
   constraint pk_account_ROLE primary key (ACCOUNT_ROLE_ID)
  );
  
- CREATE TABLE ROLE(
+ CREATE TABLE sys_ROLE(
   ROLE_ID INT NOT NULL,
   ROLE_CODE VARCHAR(80) NOT NULL,
   ROLE_NAME VARCHAR(200) NOT NULL,
   constraint pk_account primary key (ROLE_ID)
   );
 
-CREATE TABLE ROLE_MENU(
+CREATE TABLE sys_ROLE_MENU(
    ROLE_MENU_ID INT NOT NULL,
    ROLE_ID INT NOT NULL,
    MENU_ID INT NOT NULL,
   constraint pk_account primary key (ROLE_MENU_ID)
   );
   
-CREATE TABLE MENU(
+CREATE TABLE sys_MENU(
    MENU_ID INT NOT NULL,
    MENU_CODE VARCHAR(80) NOT NULL,
    MENU_NAME VARCHAR(200) NOT NULL,
@@ -65,7 +65,7 @@ CREATE TABLE MENU(
    constraint pk_account primary key (MENU_ID)
   );
   
-create table dept (
+create table sys_dept (
 	dept_id integer not null,
 	dept_code varchar(80) not null,
 	dept_name varchar(200) not null,
@@ -73,7 +73,7 @@ create table dept (
 	constraint pk_account primary key (dept_id)
 );
 
-CREATE TABLE COMPANY(
+CREATE TABLE sys_COMPANY(
 	COMPANY_ID INT NOT NULL,
 	COMPANY_CODE VARCHAR(80) NOT NULL,
 	COMPANY_NAME VARCHAR(200) NOT NULL,
