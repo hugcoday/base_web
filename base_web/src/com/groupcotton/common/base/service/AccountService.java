@@ -4,22 +4,32 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.servlet.HandlerExceptionResolver;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.groupcotton.common.base.dao.AccountMapper;
 import com.groupcotton.common.base.vo.Account;
 import com.groupcotton.common.util.DataGridModel;
 
 @Service
-public class AccountService {
+public class AccountService  implements HandlerExceptionResolver {
 
+	 private static final Log LOG = LogFactory.getLog(AccountService.class);
+	
 	@Autowired
 	private AccountMapper accountMapper;
 
 	public Account getAccount(String accountcode) {
+		
 		return accountMapper.getAccountByUsername(accountcode);
 	}
 
@@ -61,6 +71,12 @@ public class AccountService {
 		result.put("rows", list);
 
 		return result;
+	}
+
+	public ModelAndView resolveException(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2, Exception arg3) {
+		// TODO Auto-generated method stub
+		
+		return null;
 	}
 
 }

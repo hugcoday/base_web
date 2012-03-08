@@ -21,7 +21,7 @@
         	status ,
         	addr1 ,
         	addr2 ,
-        	phone  FROM  account    where account_code = #{value}
+        	phone  FROM  sys_account!    where account_code = #{value}
   </select>
   
   
@@ -37,11 +37,11 @@
         	status ,
         	addr1 ,
         	addr2 ,
-        	phone  FROM  account    where account_code = #{accountcode} and password=#{password}
+        	phone  FROM  sys_account    where account_code = #{accountcode} and password=#{password}
   </select>
 	
   <select id="getCount" parameterType="Account" resultType="int">
-    SELECT count(*) FROM  account    
+    SELECT count(*) FROM  sys_account    
   </select>
   
   
@@ -58,7 +58,7 @@
         	addr1 ,
         	addr2 ,
         	phone 
-		FROM account
+		FROM sys_account
   </select>
 
   <select id="getAccountByID" parameterType="string" resultType="Account">
@@ -74,14 +74,14 @@
         	addr1 ,
         	addr2 ,
         	phone 
-		FROM account
+		FROM sys_account
 		where
         account_id = #{id} 
   </select>
 	<!-- useGeneratedKeys="true" keyProperty="xxx" for sqlserver and mysql -->
 	<insert id="insertAccount" parameterType="Account" >
     
-        INSERT INTO account (
+        INSERT INTO sys_account (
         	account_id ,
         	account_code ,
         	account_name ,
@@ -118,7 +118,7 @@
     
 	<update id="updateAccount" parameterType="Account" >
      
-        UPDATE account SET
+        UPDATE sys_account SET
 	        account_code = #{accountCode} ,
 	        account_name = #{accountName} ,
 	        password = #{password} ,
@@ -136,7 +136,7 @@
 
     <delete id="deleteAccount" parameterType="java.util.List">
      
-        DELETE FROM account WHERE
+        DELETE FROM sys_account WHERE
         account_id  in 
 		
 		<foreach item="item" index="index" collection="list" open="(" separator="," close=")">

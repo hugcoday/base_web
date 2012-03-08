@@ -7,7 +7,7 @@
   <cache />
 
   <select id="findAll" resultType="Dept">
-    SELECT * FROM DEPT
+    SELECT * FROM sys_DEPT
   </select>
 
 </mapper>

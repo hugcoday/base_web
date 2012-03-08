@@ -3,14 +3,27 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-	
-	<!-- 
-	默认的spring配置文件是在WEB-INF下的applicationContext.xml
-	Spring 容器启动监听器
-	 -->
+
+	<!-- 默认的spring配置文件是在WEB-INF下的applicationContext.xml Spring 容器启动监听器 -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+
+	
+	<!-- Log4j 配置 -->
+
+
+<listener>
+
+<listener-class>
+
+org.springframework.web.util.Log4jConfigListener
+
+</listener-class>
+
+</listener>
+<!-- Log4j 配置 -->
+
 
 	<filter>
 		<filter-name>Set Character Encoding</filter-name>
@@ -24,12 +37,12 @@
 			<param-value>true</param-value><!-- 强制进行转码 -->
 		</init-param>
 	</filter>
-	
+
 	<filter-mapping>
 		<filter-name>Set Character Encoding</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-	
+
 	<!-- 默认所对应的配置文件是WEB-INF下的{servlet-name}-servlet.xml，这里便是：spring3-servlet.xml -->
 	<servlet>
 		<servlet-name>spring</servlet-name>

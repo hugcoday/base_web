@@ -1,11 +1,16 @@
 package com.groupcotton.common.base.web;
 
+import java.io.IOException;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -46,6 +51,12 @@ public class AccountAction  {
 	public void setDeptService(DeptService deptService) {
 		this.deptService = deptService;
 	}
+	
+	@ExceptionHandler(value={IOException.class,SQLException.class})
+	public String exp(Exception ex, HttpServletRequest request) {
+	        request.setAttribute("ex", ex);
+	        return "/error.jsp";
+	    }
 
 	@RequestMapping(value="/list",method=RequestMethod.GET)   
 	public String list(Model model) throws Exception {
