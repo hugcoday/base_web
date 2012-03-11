@@ -11,23 +11,23 @@ import com.groupcotton.common.base.vo.Account;
 
 public interface AccountMapper {
 
-  static final Log LOG = LogFactory.getLog(AccountMapper.class);
+ 
   
-  Account getAccountByUsername(String accountcode);
+  Account getAccountByUsername(String accountcode) throws Exception ;
 
-  Account getAccountByUsernameAndPassword(Account account);
+  Account getAccountByUsernameAndPassword(Account account) throws Exception ;
 
-  void insertAccount(Account account);
+  void insertAccount(Account account) throws Exception ;
   
 
-  void updateAccount(Account account);
+  void updateAccount(Account account) throws Exception ;
 
   
-  void deleteAccount(List<Integer> list);
+  void deleteAccount(List<Integer> list) throws Exception ;
   
-  List<Account> getPageList(Account account);
+  List<Account> getPageList(Account account) throws Exception ;
   
-  int getCount(Account account);
+  int getCount(Account account) throws Exception ;
  
 
 }

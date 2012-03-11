@@ -26,7 +26,7 @@
 		<!-- 定义默认的异常处理页面，当该异常类型的注册时使用 -->
 		<property name="defaultErrorView" value="error"></property>
 		<!-- 定义异常处理页面用来获取异常信息的变量名，默认名为exception -->
-		<property name="exceptionAttribute" value="ex"></property>
+		<property name="exceptionAttribute" value="exception"></property>
 		<!-- 定义需要特殊处理的异常，用类名或完全路径名作为key，异常也页名作为值 -->
 		<property name="exceptionMappings">
 			<props>
@@ -72,4 +72,29 @@
 	</context:component-scan>
 
 
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="save*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception" />
+			<tx:method name="insert*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception" />
+			<tx:method name="update*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception" />
+			<tx:method name="delete*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception" />
+			<tx:method name="import*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception" />
+			<tx:method name="rcpersist*" propagation="REQUIRED"
+				rollback-for="java.lang.Exception" />
+			<tx:method name="parse*" propagation="NEVER" rollback-for="java.lang.Exception" />
+		</tx:attributes>
+	</tx:advice>
+	<aop:config>
+		<aop:pointcut id="serviceOperation"
+			expression="execution(* com.groupcotton..*Service.*(..))" />
+		<aop:advisor pointcut-ref="serviceOperation" advice-ref="txAdvice" />
+	</aop:config>
+
+
+ 
 </beans>

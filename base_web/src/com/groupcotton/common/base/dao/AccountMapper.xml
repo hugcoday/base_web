@@ -21,7 +21,7 @@
         	status ,
         	addr1 ,
         	addr2 ,
-        	phone  FROM  sys_account!    where account_code = #{value}
+        	phone  FROM  sys_account1    where account_code = #{value}
   </select>
   
   

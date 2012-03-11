@@ -1,5 +1,6 @@
-#Tue Dec 06 16:59:40 CST 2011
+#Fri Mar 09 15:23:42 CST 2012
 eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/view/error.jsp=UTF-8
 encoding//WebContent/WEB-INF/view/relogin.jsp=UTF-8
 encoding//WebContent/WEB-INF/view/role/list.jsp=UTF-8
 encoding//WebContent/WEB-INF/view/role/popWindow.jsp=UTF-8

@@ -7,7 +7,6 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,19 +20,23 @@ import com.groupcotton.common.base.vo.Account;
 import com.groupcotton.common.util.DataGridModel;
 
 @Service
-public class AccountService  implements HandlerExceptionResolver {
+public class AccountService {
 
-	 private static final Log LOG = LogFactory.getLog(AccountService.class);
-	
+	private static final Log LOG = LogFactory.getLog(AccountService.class);
+
 	@Autowired
 	private AccountMapper accountMapper;
 
-	public Account getAccount(String accountcode) {
-		
-		return accountMapper.getAccountByUsername(accountcode);
+	public Account getAccount(String accountcode) throws Exception {
+		Account account = null;
+
+			account = accountMapper.getAccountByUsername(accountcode);
+
+
+		return account;
 	}
 
-	public Account getAccount(String accountcode, String password) {
+	public Account getAccount(String accountcode, String password) throws Exception {
 		Account account = new Account();
 		account.setAccountCode(accountcode);
 		account.setPassword(password);
@@ -41,42 +44,34 @@ public class AccountService  implements HandlerExceptionResolver {
 	}
 
 	@Transactional
-	public void insertAccount(Account account) {
+	public void insertAccount(Account account) throws Exception {
 		accountMapper.insertAccount(account);
 
 	}
 
 	@Transactional
-	public void updateAccount(Account account) {
+	public void updateAccount(Account account) throws Exception {
 		accountMapper.updateAccount(account);
-	 
+
 	}
-	
+
 	@Transactional
-	public void deleteAccount(List<Integer> list) {
+	public void deleteAccount(List<Integer> list) throws Exception {
 		accountMapper.deleteAccount(list);
 	}
-	 
 
 	@SuppressWarnings("rawtypes")
 	public Map<String, Object> getPageList(DataGridModel dgm, Account user) throws Exception {
 
 		Map<String, Object> result = new HashMap<String, Object>(2);
-		
-		int  total = accountMapper.getCount(user);
+
+		int total = accountMapper.getCount(user);
 		List<Account> list = accountMapper.getPageList(user);
-		
-		
+
 		result.put("total", total);
 		result.put("rows", list);
 
 		return result;
-	}
-
-	public ModelAndView resolveException(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2, Exception arg3) {
-		// TODO Auto-generated method stub
-		
-		return null;
 	}
 
 }
